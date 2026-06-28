@@ -2,7 +2,7 @@
 
 An intelligent platform that combines AI capabilities with real-time company data analysis to provide comprehensive business insights.
 
-## 🚀 Features
+## Features
 
 - **Company Search & Analysis**: Search for companies and get detailed information powered by AI
 - **Interactive Chat**: Ask questions about companies and get intelligent responses
@@ -12,14 +12,14 @@ An intelligent platform that combines AI capabilities with real-time company dat
 - **Scalable Architecture**: Backend built with Express.js and PostgreSQL
 - **Docker Support**: Easy deployment with Docker and Docker Compose
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Node.js 18+ or Docker
 - PostgreSQL 15+ (if running locally)
 - OpenAI API Key
 - npm or yarn package manager
 
-## 🛠️ Installation
+## Installation
 
 ### Option 1: Using Docker Compose (Recommended)
 
@@ -82,7 +82,7 @@ cp .env.example .env
 npm run dev
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 .
@@ -120,7 +120,7 @@ npm run dev
 └── README.md
 ```
 
-## 🔌 API Endpoints
+## API Endpoints
 
 ### Company Endpoints
 
@@ -140,7 +140,7 @@ npm run dev
 
 - `GET /api/health` - Health check endpoint
 
-## 🔐 Environment Variables
+## Environment Variables
 
 ### Backend (.env)
 
@@ -160,7 +160,7 @@ VITE_API_URL=http://localhost:3001/api
 VITE_APP_NAME=Company Intelligence Platform
 ```
 
-## 🚀 Deployment
+## Deployment
 
 ### Docker Deployment
 
@@ -212,7 +212,7 @@ The application uses PostgreSQL with the following main tables:
 - **sessions**: User session tracking
 - **audit_logs**: System audit trail
 
-## 🤖 AI Integration
+## AI Integration
 
 The platform uses OpenAI's GPT API to:
 
@@ -243,11 +243,11 @@ npm run format
 3. Push to branch: `git push origin feature/your-feature`
 4. Submit a pull request
 
-## 📝 API Documentation
+## API Documentation
 
 Interactive API documentation is available at `/api-docs` when the backend is running.
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please follow these guidelines:
 
@@ -257,11 +257,11 @@ Contributions are welcome! Please follow these guidelines:
 4. Write tests for new features
 5. Submit a pull request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 🆘 Troubleshooting
+## Troubleshooting
 
 ### Database Connection Issues
 
@@ -291,10 +291,6 @@ docker-compose logs frontend
 - Verify backend is running: `curl http://localhost:3001/api/health`
 - Check CORS settings in environment
 - Verify API URL in frontend environment
-
-## 📧 Support
-
-For support, email support@example.com or create an issue on GitHub.
 
 ## 🙏 Acknowledgments
 
