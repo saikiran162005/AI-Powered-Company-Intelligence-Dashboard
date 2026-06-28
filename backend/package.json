@@ -1,0 +1,54 @@
+{
+  "name": "company-intelligence-backend",
+  "version": "1.0.0",
+  "description": "Backend for AI Company Intelligence Platform",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint src/**/*.ts",
+    "migrate": "psql -U $DB_USER -h $DB_HOST -d $DB_NAME -f database/migrations/001_initial_schema.sql"
+  },
+  "keywords": [
+    "ai",
+    "company",
+    "research",
+    "gemini",
+    "langchain"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "pg": "^8.11.2",
+    "langchain": "^0.1.26",
+    "@google/generative-ai": "^0.2.0",
+    "axios": "^1.6.2",
+    "uuid": "^9.0.1",
+    "winston": "^3.11.0",
+    "helmet": "^7.1.0",
+    "express-rate-limit": "^7.1.5",
+    "joi": "^17.11.0",
+    "body-parser": "^1.20.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.10.6",
+    "@types/pg": "^8.11.4",
+    "@types/uuid": "^9.0.7",
+    "@types/jest": "^29.5.11",
+    "typescript": "^5.3.3",
+    "ts-node-dev": "^2.0.0",
+    "ts-node": "^10.9.2",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "eslint": "^8.56.0",
+    "@typescript-eslint/eslint-plugin": "^6.16.0",
+    "@typescript-eslint/parser": "^6.16.0"
+  }
+}
